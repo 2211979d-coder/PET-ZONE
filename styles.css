@@ -1,0 +1,179 @@
+/* ------------------------------
+  GlowUp - Belleza y Maquillaje
+  Paleta: Verde (#4CAF50), Amarillo (#FFC107), Blanco (#FFFFFF)
+  Reglas CRAP: Contraste, Repetición, Alineación, Proximidad
+------------------------------ */
+
+/* COMENTARIO: Estilos globales del cuerpo de la página y tipografía base  */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0; /* Fondo blanco/gris claro para Contraste  */
+    color: #333; /* Texto principal oscuro */
+}
+
+/* COMENTARIO: Estilo del encabezado (header) */
+header {
+    background-color: #4CAF50; /* Verde: Estabilidad, Natural, Prestigio */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* COMENTARIO: Estilo del pie de página (footer) */
+footer {
+    background-color: #4CAF50; /* Verde: Repetición del color de marca  */
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed; /* Opcional: para que quede fijo abajo */
+    bottom: 0;
+    width: 100%;
+}
+
+/* ------------------ MENÚ DE NAVEGACIÓN ------------------ */
+nav ul {
+    list-style-type: none; /* Elimina las viñetas */
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+nav li {
+    float: left;
+}
+
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+/* COMENTARIO: Efecto hover para el menú */
+nav li a:hover {
+    background-color: #FFC107; /* Amarillo: Energía, Alegría */
+    color: #333; /* Contraste con el texto */
+}
+
+/* ------------------ SECCIÓN DE PRODUCTOS ------------------ */
+.productos-container {
+    padding: 20px;
+    margin-bottom: 50px; /* Espacio para el footer fijo */
+}
+
+.tabla-productos {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.tabla-productos tr {
+    border-bottom: 1px solid #ddd; /* Separador sutil */
+}
+
+.tabla-productos tr:hover {
+    background-color: #FFF9C4; /* Amarillo muy suave para destacar */
+    cursor: pointer;
+}
+
+.tabla-productos td {
+    padding: 15px;
+    text-align: left;
+    vertical-align: top;
+}
+
+.imagen-producto {
+    width: 150px;
+    height: auto;
+    display: block;
+}
+
+/* COMENTARIO: Efecto de imagen de sustitución usando hover */
+.producto-imagen-principal {
+    display: block; /* Muestra la imagen principal por defecto */
+}
+
+.producto-imagen-sustitucion {
+    display: none; /* Oculta la imagen de sustitución por defecto */
+}
+
+.tabla-productos td:hover .producto-imagen-principal {
+    display: none;
+}
+.tabla-productos td:hover .producto-imagen-sustitucion {
+    display: block;
+}
+
+/* ------------------ FORMULARIO ------------------ */
+.formulario-container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.formulario-container label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.formulario-container input[type="text"],
+.formulario-container input[type="email"],
+.formulario-container input[type="number"],
+.formulario-container select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* COMENTARIO: Estilos de los botones del formulario */
+.botones-form input[type="submit"] {
+    background-color: #4CAF50; /* Botón de Enviar en Verde */
+    color: white; /* Contraste */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+    transition: background-color 0.3s;
+}
+
+.botones-form input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.botones-form input[type="reset"] {
+    background-color: #f44336; /* Botón de Borrar en Rojo */
+    color: white; /* Contraste */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.botones-form input[type="reset"]:hover {
+    background-color: #da190b;
+}
+
+/* ------------------ IMAGEN PRINCIPAL (Quiénes somos / portada) ------------------ */
+.imagen-equipo {
+    max-width: 600px;   /* ancho máximo para que no se vea demasiado grande */
+    width: 100%;        /* ocupa todo el ancho disponible en pantallas pequeñas */
+    height: auto;       /* mantiene la proporción original */
+    border-radius: 12px; /* esquinas redondeadas */
+    display: block;     /* asegura que se comporte como bloque */
+    margin: 20px auto;  /* centrado con espacio arriba y abajo */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15); /* sombra ligera */
+}

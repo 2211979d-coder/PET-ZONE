@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Nombre de la Empresa - Contáctanos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>PET'S DELUXE 🐾</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Página principal</a></li>
+            <li><a href="quienes_somos.html">Quienes somos</a></li>
+            <li><a href="productos.html">Productos/Servicios</a></li>
+            <li><a href="contactanos.html">Contáctanos</a></li>
+        </ul>
+    </nav>
+
+    <div class="formulario-container">
+        <h2>Solicita tu Cotización o Pedido</h2>
+        
+        <form action="#" method="POST">
+            
+            <label for="nombre">Nombre del cliente:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="celular">Celular:</label>
+            <input type="text" id="celular" name="celular" required>
+
+            <label for="mail">Mail:</label>
+            <input type="email" id="mail" name="mail" required>
+
+            <label for="tipo_producto">Tipo de servicio o producto:</label>
+            <input type="text" id="tipo_producto" name="tipo_producto" list="productos_lista" required>
+            <datalist id="productos_lista">
+                <option value="Collar Ergonómico 'EcoPet'">
+                <option value="Cama 'Nube de Descanso'">
+                <option value="Juguete 'Masticable Forever'">
+                <option value="Otro">
+            </datalist>
+
+            <label for="cantidad">Cantidad:</label>
+            <input type="number" id="cantidad" name="cantidad" min="1" required>
+
+            <label for="pago">Forma de pago:</label>
+            <select id="pago" name="pago" required>
+                <option value="">Seleccione una opción</option>
+                <option value="tarjeta">Tarjeta (Crédito/Débito)</option>
+                <option value="deposito">Depósito Bancario</option>
+                <option value="oxxo">Pago en Oxxo</option>
+            </select>
+            
+            <br><br>
+            
+            <div class="botones-form">
+                <input type="submit" value="Enviar Pedido">
+                <input type="reset" value="Borrar Formulario">
+            </div>
+        </form>
+    </div>
+
+    <footer>
+        <p>Desarrollado por: [Nombre Integrante 1], [Nombre Integrante 2], [Nombre Integrante 3], [Nombre Integrante 4]</p>
+    </footer>
+</body>
+</html>
